@@ -1,159 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GMONAD TESTNET</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: rgba(0, 0, 255, 0.5) url(https://allinstation.com/wp-content/uploads/2023/11/monad_banner.jpg) no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GMONAD TESTNET</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: rgba(0, 0, 255, 0.5) url(https://allinstation.com/wp-content/uploads/2023/11/monad_banner.jpg) no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-    h1 {
-      text-align: center;
-      margin: 30px 0 20px;
-      font-size: 42px;
-      color: #6F2DA8;
-      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-    }
+    h1 {
+      text-align: center;
+      margin: 30px 0 20px;
+      font-size: 42px;
+      color: #6F2DA8;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    }
 
-    .scroll-wrapper {
-      overflow-x: auto;
-      width: 100%;
-    }
+    .scroll-wrapper {
+      overflow-x: auto;
+      width: 100%;
+    }
 
-    .horizontal-wrapper {
-      display: flex;
-      gap: 20px;
-      padding: 10px 20px 40px;
-      min-width: max-content;
-    }
+    .horizontal-wrapper {
+      display: flex;
+      gap: 20px;
+      padding: 10px 20px 40px;
+      min-width: max-content;
+    }
 
-    .corner-column {
-      display: flex;
-      flex-direction: column;
-      width: 180px;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-      backdrop-filter: blur(6px);
-      background: rgba(0, 0, 60, 0.4);
-    }
+    .corner-column {
+      display: flex;
+      flex-direction: column;
+      width: 180px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(6px);
+      background: rgba(0, 0, 60, 0.4);
+    }
 
-    .corner-title {
-      background: rgba(0, 0, 128, 0.8);
-      padding: 12px;
-      font-size: 16px;
-      font-weight: bold;
-      text-align: center;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #00BFFF;
-    }
+    .corner-title {
+      background: rgba(0, 0, 128, 0.8);
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #00BFFF;
+    }
 
-    .corner-box {
-      height: 60px;
-      background: rgba(0, 0, 100, 0.3);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      transition: background 0.3s, transform 0.2s;
-    }
+    .corner-box {
+      height: 60px;
+      background: rgba(0, 0, 100, 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      transition: background 0.3s, transform 0.2s;
+    }
 
-    .corner-box a {
-      color: #00BFFF;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 15px;
-      transition: color 0.3s;
-    }
+    .corner-box a {
+      color: #00BFFF;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      transition: color 0.3s;
+    }
 
-    .corner-box:hover {
-      background: rgba(0, 0, 160, 0.6);
-      transform: scale(1.02);
-    }
+    .corner-box:hover {
+      background: rgba(0, 0, 160, 0.6);
+      transform: scale(1.02);
+    }
 
-    .corner-box a:hover {
-      color: #FFD700;
-    }
+    .corner-box a:hover {
+      color: #FFD700;
+    }
 
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 32px;
-      }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 32px;
+      }
 
-      .corner-column {
-        width: 140px;
-      }
-    }
-  </style>
+      .corner-column {
+        width: 140px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <h1>GMONAD TESTNET</h1>
+  <h1>GMONAD TESTNET</h1>
 
-  <div class="scroll-wrapper">
-    <div class="horizontal-wrapper">
+  <div class="scroll-wrapper">
+    <div class="horizontal-wrapper">
 
-      <div class="corner-column">
-        <div class="corner-title">DEPLOY</div>
-        <div class="corner-box"><a href="https://remix.ethereum.org/" target="_blank">REMIX</a></div>
-        <div class="corner-box"><a href="https://testnet.monadexplorer.com/" target="_blank">EXPLORER</a></div>
-        <div class="corner-box"><a href="https://owlto.finance/" target="_blank">OWLTO</a></div>
-        <div class="corner-box"><a href="https://layerhub.xyz/" target="_blank">LAYERHUB</a></div>
-      </div>
+      <div class="corner-column">
+        <div class="corner-title">DEPLOY</div>
+        <div class="corner-box"><a href="https://remix.ethereum.org/" target="_blank">REMIX</a></div>
+        <div class="corner-box"><a href="https://testnet.monadexplorer.com/" target="_blank">EXPLORER</a></div>
+        <div class="corner-box"><a href="https://owlto.finance/" target="_blank">OWLTO</a></div>
+        <div class="corner-box"><a href="https://layerhub.xyz/" target="_blank">LAYERHUB</a></div>
+      </div>
 
-      <div class="corner-column">
-        <div class="corner-title">LIQUIDITY</div>
-        <div class="corner-box"><a href="https://monad.ambient.finance/" target="_blank">AMBIENT</a></div>
-        <div class="corner-box"><a href="https://app.taya.fi/pools" target="_blank">TAYA</a></div>
-        <div class="corner-box"><a href="https://monad.nostra.finance/" target="_blank">NOSTRA</a></div>
-        <div class="corner-box"><a href="https://testnet.amertis.exchange/" target="_blank">AMERTIS</a></div>
-      </div>
-      
-      <div class="corner-column">
-        <div class="corner-title">LIQUIDITY</div>
-        <div class="corner-box"><a href="https://app.atlantisdex.xyz/pools/" target="_blank">ATLANTIS</a></div>
-        <div class="corner-box"><a href="https://monad.curvance.com/bridge" target="_blank">CURVANCE</a></div>
-        <div class="corner-box"><a href="https://swap.bean.exchange/liquidity" target="_blank">BEEN</a></div>
-        <div class="corner-box"><a href="https://app.purps.xyz/swap" target="_blank">PURPS</a></div>
-      </div>
+      <div class="corner-column">
+        <div class="corner-title">LIQUIDITY</div>
+        <div class="corner-box"><a href="https://monad.ambient.finance/" target="_blank">AMBIENT</a></div>
+        <div class="corner-box"><a href="https://app.taya.fi/pools" target="_blank">TAYA</a></div>
+        <div class="corner-box"><a href="https://monad.nostra.finance/" target="_blank">NOSTRA</a></div>
+        <div class="corner-box"><a href="https://testnet.amertis.exchange/" target="_blank">AMERTIS</a></div>
+      </div>
 
-      <div class="corner-column">
-        <div class="corner-title">LIQUIDITY</div>
-        <div class="corner-box"><a href="https://pancakeswap.finance/swap" target="_blank">PANCAKE</a></div>
-        <div class="corner-box"><a href="https://alpha.izumi.finance/home" target="_blank">IZUMI</a></div>
-        <div class="corner-box"><a href="https://octo.exchange/" target="_blank">OCTO</a></div>
-        <div class="corner-box"><a href="https://www.defi.blazpay.com/" target="_blank">BLAZPAY</a></div>
-      </div>
+      <div class="corner-column">
+        <div class="corner-title">LIQUIDITY</div>
+        <div class="corner-box"><a href="https://app.atlantisdex.xyz/pools/" target="_blank">ATLANTIS</a></div>
+        <div class="corner-box"><a href="https://monad.curvance.com/bridge" target="_blank">CURVANCE</a></div>
+        <div class="corner-box"><a href="https://swap.bean.exchange/liquidity" target="_blank">BEEN</a></div>
+        <div class="corner-box"><a href="https://app.purps.xyz/swap" target="_blank">PURPS</a></div>
+      </div>
 
-      <div class="corner-column">
-        <div class="corner-title">STAKING</div>
-        <div class="corner-box"><a href="https://www.magmastaking.xyz/" target="_blank">MAGMA</a></div>
-        <div class="corner-box"><a href="https://kintsu.xyz/staking" target="_blank">KINTSU</a></div>
-        <div class="corner-box"><a href="https://stake.apr.io/withdrawals?tab=request" target="_blank">APRIORI</a></div>
-        <div class="corner-box"><a href="https://aicraft.fun/projects/fizen?ref=5YPEAQ669R" target="_blank">AICRAFT</a></div>
-      </div>
+      <div class="corner-column">
+        <div class="corner-title">LIQUIDITY</div>
+        <div class="corner-box"><a href="https://pancakeswap.finance/swap" target="_blank">PANCAKE</a></div>
+        <div class="corner-box"><a href="https://alpha.izumi.finance/home" target="_blank">IZUMI</a></div>
+        <div class="corner-box"><a href="https://octo.exchange/" target="_blank">OCTO</a></div>
+        <div class="corner-box"><a href="https://www.defi.blazpay.com/" target="_blank">BLAZPAY</a></div>
+      </div>
 
-      <div class="corner-column">
-        <div class="corner-title">SWAP</div>
-        <div class="corner-box"><a href="https://app-monad-testnet.azaar.com/swap?inputCurrency=0x760AfE86e5de5fa0Ee542fc7B7B713e1c5425701&outputCurrency=0xf817257fed379853cDe0fa4F97AB987181B1E5Ea&chainId=10143" target="_blank">AZAAR</a></div>
-        <div class="corner-box"><a href="https://app.sherpa.trade/lander" target="_blank">SHERPA</a></div>
-        <div class="corner-box"><a href="https://shmonad.xyz/ecosystem" target="_blank">SHMONAD</a></div>
-        <div class="corner-box"><a href="https://testnet-preview.monorail.xyz/" target="_blank">MONORAIL</a></div>
-      </div>
+      <div class="corner-column">
+        <div class="corner-title">STAKING</div>
+        <div class="corner-box"><a href="https://www.magmastaking.xyz/" target="_blank">MAGMA</a></div>
+        <div class="corner-box"><a href="https://kintsu.xyz/staking" target="_blank">KINTSU</a></div>
+        <div class="corner-box"><a href="https://stake.apr.io/withdrawals?tab=request" target="_blank">APRIORI</a></div>
+        <div class="corner-box"><a href="https://aicraft.fun/projects/fizen?ref=5YPEAQ669R" target="_blank">AICRAFT</a></div>
+      </div>
 
-    </div>
-  </div>
+      <div class="corner-column">
+        <div class="corner-title">SWAP</div>
+        <div class="corner-box"><a href="https://app-monad-testnet.azaar.com/swap?inputCurrency=0x760AfE86e5de5fa0Ee542fc7B7B713e1c5425701&outputCurrency=0xf817257fed379853cDe0fa4F97AB987181B1E5Ea&chainId=10143" target="_blank">AZAAR</a></div>
+        <div class="corner-box"><a href="https://app.sherpa.trade/lander" target="_blank">SHERPA</a></div>
+        <div class="corner-box"><a href="https://shmonad.xyz/ecosystem" target="_blank">SHMONAD</a></div>
+        <div class="corner-box"><a href="https://testnet-preview.monorail.xyz/" target="_blank">MONORAIL</a></div>
+      </div>
+
+      <!-- Tambahan Baru -->
+      <div class="corner-column">
+        <div class="corner-title">LIQUIDITY</div>
+        <div class="corner-box"><a href="https://testnet.crust.finance/swap" target="_blank">CRUST FIR</a></div>
+        <div class="corner-box"><a href="https://app.gasp.xyz/" target="_blank">GASP</a></div>
+        <div class="corner-box"><a href="https://alpha.clober.io/trade" target="_blank">CLOBER</a></div>
+        <div class="corner-box"><a href="https://balancer.fi/" target="_blank">BALANCER</a></div>
+      </div>
+
+      <div class="corner-column">
+        <div class="corner-title">LIQUIDITY</div>
+        <div class="corner-box"><a href="https://app.enjoyoors.xyz/" target="_blank">ENJOYOOR</a></div>
+        <div class="corner-box"><a href="https://bhive.finance/" target="_blank">BHIVE FI</a></div>
+        <div class="corner-box"><a href="https://app.demask.finance/pools" target="_blank">DEMASK</a></div>
+        <div class="corner-box"><a href="https://testapp.nitrofinance.xyz/liquidity" target="_blank">NITRO FINI</a></div>
+      </div>
+
+      <div class="corner-column">
+        <div class="corner-title">LIQUIDITY</div>
+        <div class="corner-box"><a href="https://app.nabla.fi/pools?bp=0xaf60721650ff816d54dc82608486d779f9b35e6b" target="_blank">NABLA</a></div>
+      </div>
+
+    </div>
+  </div>
 
 </body>
-  </html>
+</html>
